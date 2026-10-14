@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rishav Raj | Software Engineer & AI/ML</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#EEF1F3;--panel:#F8FAFB;--ink:#15222D;--muted:#52626F;--line:#C9D1D7;--accent:#B83A0B;--chip:#E1E7EB;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10181F;--panel:#16212A;--ink:#E6ECF0;--muted:#9AABB8;--line:#2A3743;--accent:#FB923C;--chip:#1F2C37;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#10181F;--panel:#16212A;--ink:#E6ECF0;--muted:#9AABB8;--line:#2A3743;--accent:#FB923C;--chip:#1F2C37;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","Instrument Sans",system-ui,sans-serif;margin:0;line-height:1.1;letter-spacing:-.02em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:20px;align-items:center;height:56px;overflow-x:auto;white-space:nowrap}
+nav b{font-family:"Bricolage Grotesque",sans-serif;font-size:19px;margin-right:auto}
+nav a{text-decoration:none;color:var(--muted);font-size:15px;font-weight:500}
+nav a:hover{color:var(--ink)}
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+#surface{position:absolute;inset:0;width:100%;height:100%;display:block}
+.hero .wrap{position:relative;padding-top:96px;padding-bottom:88px;pointer-events:none}
+.hero a,.hero button{pointer-events:auto}
+.hero h1{font-size:clamp(52px,11vw,116px);font-weight:800}
+.hero p.lead{max-width:34em;font-size:clamp(18px,2.4vw,22px);margin:22px 0 30px;color:var(--ink)}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:12px 20px;border-radius:6px;border:1.5px solid var(--ink);text-decoration:none;font-weight:600;font-size:16px}
+.btn.fill{background:var(--ink);color:var(--bg)}
+.btn:hover{border-color:var(--accent)}
+.btn.fill:hover{background:var(--accent);color:#fff}
+.score{position:absolute;right:20px;bottom:14px;font:500 13px/1.3 "Instrument Sans",sans-serif;color:var(--muted);text-align:right;pointer-events:none}
+.score b{color:var(--accent);font-size:15px}
+section{padding:72px 0;border-bottom:1px solid var(--line)}
+h2{font-size:clamp(30px,5vw,44px);margin-bottom:28px;font-weight:700}
+.about{display:grid;grid-template-columns:1.6fr 1fr;gap:40px}
+.facts{margin:0;padding:0;list-style:none;border-left:3px solid var(--accent);padding-left:18px}
+.facts li{margin-bottom:14px;color:var(--muted)}
+.facts strong{display:block;color:var(--ink);font-size:18px}
+.proj{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:30px;margin-bottom:24px}
+.proj h3{font-size:28px;margin-bottom:4px}
+.proj .sub{color:var(--muted);margin:0 0 16px}
+.proj ul{padding-left:20px;margin:0 0 20px}
+.proj li{margin-bottom:8px;max-width:70ch}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.chips li{background:var(--chip);border-radius:99px;padding:4px 13px;font-size:14px;font-weight:500}
+.link{font-weight:600;display:inline-block;margin-top:16px}
+.tl{margin:0;padding:0;list-style:none;border-left:2px solid var(--line)}
+.tl li{position:relative;padding:0 0 28px 28px}
+.tl li::before{content:"";position:absolute;left:-7px;top:9px;width:12px;height:12px;border-radius:50%;background:var(--accent)}
+.tl h3{font-size:22px}.tl .when{color:var(--muted);font-size:15px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px}
+.cols h3{font-size:20px;margin-bottom:10px}
+.cols p{margin:0 0 6px;color:var(--muted)}
+.cols p b{color:var(--ink);font-weight:600}
+footer{padding:64px 0 48px}
+footer h2{margin-bottom:12px}
+footer .small{color:var(--muted);font-size:14px;margin-top:40px}
+#social{margin-top:14px}
+@media (max-width:720px){.about{grid-template-columns:1fr}.hero .wrap{padding-top:64px;padding-bottom:72px}.proj{padding:22px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>Rishav Raj</b><a href="#about">About</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div></nav>
+
+<header class="hero">
+<canvas id="surface" aria-hidden="true"></canvas>
+<div class="wrap">
+<h1>Rishav Raj</h1>
+<p class="lead">Computer Science student building full-stack web apps and computer vision systems. Looking for a software development or AI/ML internship.</p>
+<div class="btns"><a class="btn fill" href="#projects">See my projects</a><a class="btn" href="mailto:rajrishav7013@gmail.com">Email me</a></div>
+<div class="btns" id="social"></div>
+</div>
+<div class="score" aria-hidden="true">Move your pointer over the surface<br>anomaly score <b id="sc">0.00</b></div>
+</header>
+
+<main>
+<section id="about"><div class="wrap">
+<h2>About</h2>
+<div class="about">
+<p>I'm a BTech student in Computer Science and Business Systems at SRM Institute of Science and Technology. I like projects where the problem is concrete: a patient who needs to book a physiotherapist securely, or a factory line that needs to catch a scratched surface. My foundation is in Python, data structures and algorithms, databases and SQL, and object-oriented design.</p>
+<ul class="facts">
+<li><strong>SRM Institute of Science and Technology</strong>BTech CSBS, 2023 to 2027</li>
+<li><strong>CGPA 7.84 / 10</strong>Kattankulathur, Tamil Nadu</li>
+<li><strong>Open to</strong>Software development and AI/ML internships</li>
+</ul>
+</div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<h2>Projects</h2>
+
+<article class="proj">
+<h3>PhysioConnect</h3>
+<p class="sub">Telehealth physiotherapy platform</p>
+<ul>
+<li>Full-stack platform with two roles, patients and physiotherapists, covering appointment booking, rehab programs, educational content and session reports.</li>
+<li>Multi-layer authentication: JWT, Google OAuth with Passport.js, OTP email verification with Nodemailer, bcrypt password hashing and TOTP two-factor authentication with Speakeasy.</li>
+<li>Patient onboarding with medical history, rehab programs assigned through unique codes, and doctor tools for notes, prescriptions and follow-ups.</li>
+<li>Frontend deployed on Vercel; file uploads for team photos and videos handled with Multer.</li>
+</ul>
+<ul class="chips"><li>React Router v7</li><li>Tailwind CSS v4</li><li>JWT</li><li>Passport.js</li><li>Nodemailer</li><li>bcrypt</li><li>Speakeasy</li><li>Multer</li><li>Vercel</li></ul>
+<a class="link proj-link" data-key="physio" href="#" hidden>View on GitHub</a>
+</article>
+
+<article class="proj">
+<h3>DefectLens AI</h3>
+<p class="sub">AI-powered industrial surface defect detection</p>
+<ul>
+<li>Image-based inspection system that finds and analyzes surface defects in industrial products.</li>
+<li>Anomaly detection with visual heatmaps that highlight the affected regions of an image.</li>
+<li>Interactive dashboard showing inspection results, anomaly scores and model evaluation metrics.</li>
+<li>Evaluated on the MVTec Anomaly Detection (MVTec AD) dataset.</li>
+</ul>
+<ul class="chips"><li>Machine Learning</li><li>Computer Vision</li><li>Anomaly Detection</li><li>Image Processing</li><li>MVTec AD</li></ul>
+<a class="link proj-link" data-key="defect" href="#" hidden>View on GitHub</a>
+</article>
+</div></section>
+
+<section id="education"><div class="wrap">
+<h2>Education</h2>
+<ol class="tl">
+<li><h3>BTech, Computer Science and Business Systems</h3><div class="when">SRM Institute of Science and Technology · Aug 2023 to May 2027 · CGPA 7.84/10</div><div>Coursework: DBMS, SQL, Object-Oriented Programming, Operating Systems.</div></li>
+<li><h3>Class XII, CBSE</h3><div class="when">Laxman Public School, New Delhi · 2023 · 70.6%</div></li>
+<li><h3>Class X, CBSE</h3><div class="when">Gyan Niketan School, Patna · 2021 · 93.3%</div></li>
+</ol>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<h2>Skills and certifications</h2>
+<div class="cols">
+<div><h3>Skills</h3><p><b>Language:</b> Python</p><p><b>Core:</b> DSA, DBMS, SQL, OOPS, Operating Systems</p><p><b>Tools:</b> Git, GitHub</p><p><b>Web (from projects):</b> React, Tailwind CSS, Passport.js, JWT</p></div>
+<div><h3>Certifications</h3><p><b>Cloud Computing (Elite)</b><br>NPTEL, IIT Kharagpur, Jan to Apr 2026. Score 73%, 4 credits recommended.</p><p><b>Relational Databases and SQL</b><br>Udemy, Apr 2025. 14-hour course.</p></div>
+<div><h3>Involvement</h3><p><b>IEEE Madras Section:</b> Student Member, 2024 to 2026</p><p><b>Aarush Fest, SRM IST:</b> Committee Member, 2023 to 2024</p><p><b>Milan, SRMIST:</b> Volunteer, 2024</p><p><b>DSA-SRMIST:</b> Committee Member, 2023</p></div>
+</div>
+</div></section>
+</main>
+
+<footer id="contact"><div class="wrap">
+<h2>Let's talk</h2>
+<p>I'm looking for an internship in software development or AI/ML. The fastest way to reach me is email.</p>
+<div class="btns"><a class="btn fill" href="mailto:rajrishav7013@gmail.com">rajrishav7013@gmail.com</a><a class="btn" href="tel:+918340715427">+91 83407 15427</a></div>
+<p class="small">Based in Chennai, Tamil Nadu, India.</p>
+</div></footer>
+
+<script>
+// Paste your profile links here; buttons appear automatically when filled in.
+var LINKS={linkedin:"",github:"",physio:"",defect:""};
+(function(){
+var s=document.getElementById("social");
+[["LinkedIn",LINKS.linkedin],["GitHub",LINKS.github]].forEach(function(x){if(x[1]){var a=document.createElement("a");a.className="btn";a.href=x[1];a.target="_blank";a.rel="noopener";a.textContent=x[0];s.appendChild(a)}});
+document.querySelectorAll(".proj-link").forEach(function(a){var u=LINKS[a.dataset.key];if(u){a.href=u;a.target="_blank";a.rel="noopener";a.hidden=false}});
+var c=document.getElementById("surface"),g=c.getContext("2d"),sc=document.getElementById("sc"),W,H,D=window.devicePixelRatio||1,px=-999,py=-999,ax=.72,ay=.55;
+function size(){var r=c.parentNode.getBoundingClientRect();W=r.width;H=r.height;c.width=W*D;c.height=H*D;draw()}
+function css(v){return getComputedStyle(document.documentElement).getPropertyValue(v).trim()}
+function draw(){
+g.setTransform(D,0,0,D,0,0);g.clearRect(0,0,W,H);
+g.strokeStyle=css("--line");g.lineWidth=1;g.globalAlpha=.7;
+for(var x=0;x<W;x+=32){g.beginPath();g.moveTo(x+.5,0);g.lineTo(x+.5,H);g.stroke()}
+for(var y=0;y<H;y+=32){g.beginPath();g.moveTo(0,y+.5);g.lineTo(W,y+.5);g.stroke()}
+g.globalAlpha=1;
+var a=css("--accent"),dx=ax*W,dy=ay*H,d=Math.hypot(px-dx,py-dy),near=Math.exp(-d/(Math.min(W,500)*.35));
+var r=g.createRadialGradient(dx,dy,0,dx,dy,110);r.addColorStop(0,a);r.addColorStop(1,"transparent");
+g.globalAlpha=.12+.5*near;g.fillStyle=r;g.beginPath();g.arc(dx,dy,110,0,7);g.fill();
+g.globalAlpha=.25+.6*near;g.strokeStyle=a;g.lineWidth=2;g.strokeRect(dx-26,dy-18,52,36);
+g.globalAlpha=1;
+if(px>0){var q=g.createRadialGradient(px,py,0,px,py,60);q.addColorStop(0,"rgba(120,150,170,.28)");q.addColorStop(1,"transparent");g.fillStyle=q;g.fillRect(px-60,py-60,120,120)}
+sc.textContent=(near*.98).toFixed(2)}
+var h=c.parentNode;
+h.addEventListener("pointermove",function(e){var r=h.getBoundingClientRect();px=e.clientX-r.left;py=e.clientY-r.top;draw()});
+h.addEventListener("pointerleave",function(){px=-999;py=-999;draw()});
+window.addEventListener("resize",size);
+if(window.matchMedia)window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",draw);
+size();
+})();
+</script>
+</body>
+</html>
